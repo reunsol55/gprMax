@@ -1,0 +1,20 @@
+#title: A-scan from a four layers including a dielectric half-space
+#domain: 0.240 0.210 0.002
+#dx_dy_dz: 0.002 0.002 0.002
+#time_window: 3e-9
+
+#material: 6 0 1 0 half_space
+#material: 8 0.01 1 0 wet
+#material: 6 0 1 0 asphalt
+#material: 4 0 1 0 soil
+
+#waveform: ricker 1 1.5e9 my_ricker
+#hertzian_dipole: z 0.100 0.170 0 my_ricker
+#rx: 0.140 0.170 0
+
+#box: 0 0.150 0 0.240 0.170 0.002 half_space
+#box: 0 0.070 0 0.240 0.150 0.002 wet
+#box: 0 0.020 0 0.240 0.070 0.002 asphalt
+#box: 0 0 0 0.240 0.070 0.002 soil
+
+#geometry_view: 0 0 0 0.240 0.210 0.002 0.002 0.002 0.002 four_half_space n
